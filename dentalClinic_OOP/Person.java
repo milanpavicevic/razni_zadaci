@@ -1,11 +1,12 @@
 package dentalClinic_OOP;
 
 public abstract class Person {
-	/* Covek poseduje naziv, jedinstveni automatski identifikator, JMBG i novac.
-	 * Naziv i JMBG se zadaju prilikom kreiranja. Svi sadrzani podaci mogu samo da
-	 * se dohvate. Novac moze da se doda i da se oduzme, gde je povratna vrednost
-	 * indikator uspesnosti oduzimanja novca. Moze da se sastavi tekstualni zapis u
-	 * obliku: IME_PREZIME[ID:JMBG:NOVAC]*/
+	/* 
+	 * Person has name, unique ID, personal number and money.
+	 * Name and personal number are given during creation. You can only get data, not set.
+	 * You can add or remove money, and return value will show is it successfull.
+	 * Text form: NAME[ID:personalNumber:MONEY]
+	*/
 	private String name;
 	private static int UID = 0;
 	private int id, personalNo;
