@@ -1,7 +1,7 @@
 package dentalClinic_OOP;
 
 public class Dentist extends Person {
-	//Dentist is a person whose data can be written in shape: S_PERSON
+	//Dentist is a person whose data can be written in form: Dr_PERSON
 	private String tag;
 	protected int wallet;
 
