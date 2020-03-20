@@ -25,10 +25,10 @@ public class DentalClinic {
 //		System.out.println("\n");
 	}
 
-	public void chargeAmount(int amount, int indeksPacijenta) {
+	public void chargeAmount(int amount, int patientsIndex) {
 		int charge = amount - (2 * amount);
 		if (amount > 0) {
-			Patient chargePatient = patients.get(indeksPacijenta - 1);
+			Patient chargePatient = patients.get(patientsIndex - 1);
 			if (chargePatient.getWallet() < amount) {
 				System.out.println("Patient "+ chargePatient + " doesn't have enough money.\nAmount is " + amount + " euros.");
 				System.out.println("The amount will be charged by court procedure!");
